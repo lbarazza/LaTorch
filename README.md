@@ -8,13 +8,13 @@ $$ A^i_{ㅤj}ㅤB^j_{ㅤi} $$
 
 In $\latex$ this would be written as
 
-'''latex
+```latex
 A^{i}_{j} B^{j}_{i} $$
-'''
+```
 
 We can use LaTorch to translate this expression into a PyTorch model with the following code
 
-'''python
+```python
 import latorch as lt
 
 latex = u'#^{i}_{k} = A^{i}_{j} B^{j}_{k}'
@@ -31,4 +31,4 @@ result = model.forward({
     'B': torch.randn(3,3),
     'g': torch.eye(3, 3)
     })
-'''
+```
