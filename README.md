@@ -4,6 +4,6 @@ LaTorch is a simple-to-use library to convert LaTeX-like tensor expressions into
 ## How to Use
 Let us consider the following expression
 
-$$ e^{4 \phi} $$
+$$ A^i_j B^j_k $$
 
 This translates to
