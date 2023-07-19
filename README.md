@@ -4,6 +4,6 @@ LaTorch is a simple-to-use library to convert LaTeX-like tensor expressions into
 ## How to Use
 Let us consider the following expression
 
-$$ A^{i}_{\quad j} A^{i}_{\, j} $$
+$$ A^{i}_{\quad j} A^{i}_{        j} $$
 
 This translates to
