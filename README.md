@@ -4,6 +4,6 @@ LaTorch is a simple-to-use library to convert LaTeX-like tensor expressions into
 ## How to Use
 Let us consider the following expression
 
-$$ A^i_ㅤj B^i_j $$
+$$ A^i_ㅤ_j B^i_j $$
 
 This translates to
