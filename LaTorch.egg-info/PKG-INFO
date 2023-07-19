@@ -1,9 +1,0 @@
-Metadata-Version: 2.1
-Name: LaTorch
-Version: 0.1
-Summary: A translator from LaTeX tensor expressions to PyTorch models.
-Home-page: https://github.com/lbarazza/LaTorch
-Author: Leonardo Barazza
-Author-email: leonardo.barazza@gmail.com
-Classifier: License :: OSI Approved :: MIT License
-Classifier: Programming Language :: Python :: 3.7
