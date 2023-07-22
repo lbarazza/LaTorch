@@ -24,12 +24,12 @@ symbols = [
     '@g__'
     ]
 ```
-here, we define two new variables that we will use as the input to create the PyTorch model. The string `latex`{:.python} stores the latex expression, while the string `symbols` defines which latex symbols we want to use as arguments for our model. The '\_' after the variable name indicates that the variable is a tensor with a down index for every '_' used. We could also use '^' to represent an up index. Hence, we cou be 'A^_', 'A
+here, we define two new variables that we will use as the input to create the PyTorch model. The string `latex`{:.python} stores the latex expression, while the string `symbols` defines which latex symbols we want to use as arguments for our model. More specifically this variable also indicates the form the arguments will be given. For example, in this case, it specifies that both the `A` and `B` tensors are going to be passed as arguments with both indices down. This is indicated by the two '\_' after the name of the variable. In case we want to pass the tensor with an up index we can also use '\^' to represent an up index. Finally, the '@' before `g` indicates that `g` is the metric and can be used for index highering and lowering.
 
 ```python
 model = lt.LaModel(latex, symbols)
 ```
-in this line we create the PyTorch model for the above expression.
+in this line, we create the PyTorch model for the above expression.
 
 ```python
 result = model.forward({
@@ -38,8 +38,7 @@ result = model.forward({
     'g': torch.eye(3, 3)
     })
 ```
-By calling the `forward`{:.python} method we can evaluate the model. In particular the `forward`{:.python} method accepts a dictionary as an argument, which specifies the latex symbol and the value we want it to have to perform the calculation.
-
+By calling the `.forward(...)` method we can evaluate the model. In particular, this method accepts a dictionary as an argument, where the keys are the symbol names chosen in the `symbols` variable above (without possible indices) and the values are those that these variables should assume for the computation.
 
 
 
