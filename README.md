@@ -24,7 +24,7 @@ symbols = [
     '@g__'
     ]
 ```
-here, we define two new variables that we will use as the input to create the PyTorch model. The string `latex`{:.python} stores the latex expression, while the string `symbols`{:.python} defines which latex symbols we want to use as arguments for our model. The '_' after the variable name indicates that the variable is a tensor with a down index for every '_' used. We could also use '^' to represent an up index. Hence, we cou be 'A^_', 'A
+here, we define two new variables that we will use as the input to create the PyTorch model. The string `latex`{:.python} stores the latex expression, while the string `symbols`{:.python} defines which latex symbols we want to use as arguments for our model. The '\_' after the variable name indicates that the variable is a tensor with a down index for every '_' used. We could also use '^' to represent an up index. Hence, we cou be 'A^_', 'A
 
 ```python
 model = lt.LaModel(latex, symbols)
